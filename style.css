@@ -27,7 +27,7 @@ body {
 }
 
 .logomain {
-    width: 50px;
+    width: 150px;
     cursor: pointer;
     margin: 30px 0;
 }
@@ -51,11 +51,11 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
-    color: goldenrod;
+    color: #ebb548;
 }
 
 .row {
@@ -141,4 +141,12 @@ button:hover {
 }
 .illustratie {
     position: absolute;
+}
+.lines {
+    top: -21.457977294921875px;
+    left: -5.020406723022461px;
+    width: 813px;
+    height: 661px;
+    position: absolute;
+    opacity: 50%;
 }
