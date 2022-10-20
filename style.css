@@ -1,0 +1,144 @@
+/* algemene css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    background-color: #2F92A8;
+}
+
+/* specifieke css */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;;
+}
+
+.logomain {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: goldenrod;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2 {
+    font-size: 54px;
+    color: white;
+}
+
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    margin-top: 9px;
+    outline: none;
+    color: white;
+    background: #295b69;
+    border-radius: 6px;
+    transition: width 0.5s;
+}
+
+button img {
+    width: 30px;
+    display: none;
+}
+
+button:hover img {
+    display: block;
+}
+
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a8c6d2;
+}
+
+.col-1:after {
+    content: '';
+    width: 10px;
+    height: 75%;
+    background: #a8c6d2;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+    border-radius: 6px;
+}
+.col-2 {
+    position: relative;
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+}
+.color-circle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #a8c6d2;
+    border-radius: 50%;
+    height: 393px;
+    width: 393px;
+    z-index: -1;
+}
+.illustratie {
+    width: 393px;
+    height: 394px;
+    position: sticky;
+}
+.color-circle {
+    position: sticky;
+}
+.illustratie {
+    position: absolute;
+}
