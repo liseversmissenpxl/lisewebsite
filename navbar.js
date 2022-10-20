@@ -1,5 +1,5 @@
 function togglemenu() {
-    var x = document.getElementsByClassName("menu-icon");
+    var x = document.getElementById("menubar");
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {

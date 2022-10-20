@@ -143,14 +143,6 @@ button:hover {
 .illustratie {
     position: absolute;
 }
-.lines {
-    top: -21.457977294921875px;
-    left: -5.020406723022461px;
-    width: 813px;
-    height: 661px;
-    position: absolute;
-    opacity: 50%;
-}
 
 .social-links img{
     height: 20px;
@@ -182,12 +174,16 @@ button:hover {
         display: block;
 
     }
-    .menubar {
+    #menubar {
         overflow: hidden;
         transition: 0.5s;
     }
     .row {
         flex-direction: column-reverse;
         margin: 50px 0;
+    }
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
     }
 }
