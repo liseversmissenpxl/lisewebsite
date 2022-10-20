@@ -9,42 +9,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="navbar.js"></script>
 </head>
 <body>
-<header>
 
-</header>
-<main>
-<div class="container">
-    <div class="navbar">
-        <img src="assets/logolisebold.svg" class="logomain">
-        <nav>
-            <ul>
-                <li><a href="grafischontwerp.html">Grafisch ontwerp</a></li>
-                <li><a href="fotografie.html">Fotografie</a></li>
-                <li><a href="services.html">services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <img src="assets/menu.png" class="menu-icon">
-    </div>
-    <img src="assets/lines.png" class="lines" alt="lijntjes">
-    <div class="row">
-        <div class="col-1">
-            <h2>Lise Versmissen <br>
-                Graphic Designer <br>
-                Illustrator</h2>
-            <button type="button">Contact Me <img src="assets/arrow.png" alt="pijltje"></button>
+    <div class="container">
+        <div class="navbar">
+            <img src="assets/logolisebold.svg" class="logomain" alt="logo">
+            <nav>
+                <ul class="menubar">
+                    <li><a href="grafischontwerp.html">Grafisch ontwerp</a></li>
+                    <li><a href="fotografie.html">Fotografie</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+           <img src="assets/menu.png" alt="menu icon" class="menu-icon" onclick="togglemenu()">
         </div>
-        <div class="col-2">
-            <img src="assets/illustratie1.png" alt="illustratie lise" class="illustratie">
-            <div class="color-circle"></div>
-
+        <img src="assets/lines.png" class="lines" alt="lijntjes">
+        <div class="row">
+            <div class="col-1">
+                <h2>Lise Versmissen <br>
+                    Graphic Designer <br>
+                    Illustrator</h2>
+                <button type="button">Contact Me <img src="assets/arrow.png" alt="pijltje"></button>
+            </div>
+            <div class="col-2">
+                <img src="assets/illustratie1.png" alt="illustratie lise" class="illustratie">
+                <div class="color-circle"></div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="assets/linkedin.svg" alt="logo linkedin">
+            <img src="assets/instagram.svg" alt="logo instagram">
+            <img src="assets/twitter.svg" alt="logo twitter">
+            <img src="assets/facebook.svg" alt="logo facebook">
         </div>
     </div>
-</div>
-</main>
-
+<script>
+    function togglemenu() {
+        var x = document.getElementsByClassName("menu-icon");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 </body>
 <footer>
 

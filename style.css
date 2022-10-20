@@ -34,7 +34,8 @@ body {
 
 .menu-icon {
     width: 25px;
-    cursor: pointer
+    cursor: pointer;
+    display: none;
 }
 
 nav {
@@ -149,4 +150,43 @@ button:hover {
     height: 661px;
     position: absolute;
     opacity: 50%;
+}
+.social-links img{
+    height: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+.social-links {
+    text-align: center;
+}
+@media only screen and (max-width:700px) {
+
+    nav ul{
+        width: 100%;
+        background: #295b69;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 16px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon {
+        display: block;
+
+    }
+    .menubar {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
 }
