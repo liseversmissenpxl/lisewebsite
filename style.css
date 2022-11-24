@@ -73,7 +73,7 @@ nav ul li a:hover {
 }
 
 .col-1 h2 {
-    font-size: 54px;
+    font-size: 50px;
     color: white;
 }
 
@@ -185,5 +185,19 @@ button:hover {
     .col-2 {
         flex-basis: 100%;
         margin-bottom: 50px;
+        align-items: center;
     }
+    .illustratie {
+        width: 299px;
+        height: 300px;
+        position: relative;
+    }
+    .color-circle {
+        position: absolute;
+        width: 299px;
+        height: 300px;
+    }
+
+
+
 }
